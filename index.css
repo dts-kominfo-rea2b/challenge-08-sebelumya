@@ -1,0 +1,102 @@
+@keyframes color {
+  0% {
+    background: #33cccc;
+  }
+  20% {
+    background: #33cc36;
+  }
+  40% {
+    background: #b8cc33;
+  }
+  60% {
+    background: #fcca00;
+  }
+  80% {
+    background: #33cc36;
+  }
+  100% {
+    background: #33cccc;
+  }
+}
+
+body {
+  background: #33cccc; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
+}
+h1 {
+  text-align: center;
+  font-family: "Kavoon", sans-serif;
+  font-size: 2.5em;
+  color: rgb(0, 0, 0);
+}
+
+#app {
+  max-width: 450px;
+  width: 90%;
+  background: #fff;
+  margin: 10% 35%;
+  display: inline-block;
+  border-radius: 0.5rem;
+  position: center;
+  padding: 1.5rem;
+}
+
+#todo-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  position: relative;
+  text-align: center;
+}
+
+#todo-subtitle {
+  font-size: 0.85rem;
+  position: grid;
+  text-align: center;
+  width: 100%;
+  color: #3a7fff;
+}
+
+#todo-input {
+  outline: none;
+  border: 1px solid #36aeff;
+  padding: 0 0.5rem;
+  height: 2rem;
+  color: #333333;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  flex-direction: column;
+  display: inline-block;
+  width: 70%;
+  float: none;
+}
+
+#todo-submit {
+  border: none;
+  background: #02a0c0;
+  color: #fff;
+  width: 20%;
+  height: 2.2rem;
+  border-radius: 2px;
+  font-size: 0.5rem;
+  letter-spacing: 0.2px;
+  margin-bottom: 2rem;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  float: none;
+}
+
+#todo-submit:hover {
+  background: #2098b0;
+}
+
+#todo-output li {
+  font-size: 0.8rem;
+  padding: 0.7rem 1rem;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  position: relative;
+  border-left: 3px solid #dfe6e9;
+}
